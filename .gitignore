@@ -1,3 +1,7 @@
 
 *.json
 *.pyc
+etl_old.py
+01_udacity_projec-sql.code-workspace
+project-template.zip
+postgres_test.ipynb
