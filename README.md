@@ -79,7 +79,7 @@ pip install -r requirements.txt
 ```
 Run Postgres and pgAdmin using Docker on local pc (Linux, MacOS or Windows using WSL)
 ```docker
-docker-compose up
+docker-compose up -d
 ```
 Postgres will run on **localhost:5432**  
 pgAdmin will run on **localhost:5555**

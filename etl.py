@@ -83,7 +83,7 @@ def process_log_file(cur, filepath):
             songid, artistid = None, None
 
         # define songplays records
-        songplay_data = (pd.to_datetime(row.ts, unit='ms'), row.userId, row.level, songid, artistid, row.sessionId,row.location, row.userAgent)
+        songplay_data = (pd.to_datetime(row.ts, unit='ms'), row.userId, row.level, str(songid), str(artistid), row.sessionId,row.location, row.userAgent)
         
         # append row data to songplays_dump_data_list
         songplays_dump_data.append(songplay_data)

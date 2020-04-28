@@ -11,11 +11,11 @@ time_table_drop = "DROP TABLE IF EXISTS time"
 # FACTS table
 songplay_table_create = ("""CREATE TABLE IF NOT EXISTS songplays (
                                                         songplay_id SERIAL PRIMARY KEY,
-                                                        start_time TIMESTAMP,
-                                                        user_id INT,
+                                                        start_time TIMESTAMP NOT NULL,
+                                                        user_id INT NOT NULL,
                                                         level VARCHAR(4),
-                                                        song_id VARCHAR,
-                                                        artist_id VARCHAR,
+                                                        song_id VARCHAR NOT NULL,
+                                                        artist_id VARCHAR NOT NULL,
                                                         session_id INT,
                                                         location VARCHAR,
                                                         user_agent VARCHAR);
